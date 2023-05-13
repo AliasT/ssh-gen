@@ -21,6 +21,7 @@ import (
 func main() {
 	var filename string
 	flag.StringVar(&filename, "filename", "id_rsa", "输入文件名")
+	flag.Parse()
 	dirname, err := os.UserHomeDir()
 
 	if err != nil {
